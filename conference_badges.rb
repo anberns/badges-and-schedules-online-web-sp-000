@@ -20,3 +20,15 @@ def assign_rooms(names)
   end
   array
 end
+
+# printer
+def printer(names)
+  batch = batch_badge_creator(names)
+  rooms = assign_rooms(names)
+  batch.each do |str|
+    puts str
+  end
+  rooms.each do |str|
+    puts str
+  end
+end
